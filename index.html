@@ -4,9 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/assets/CSS/root.css">
-    <link rel="stylesheet" href="public/assets/CSS/style.css">
+    <link rel="stylesheet" href="public/assets/CSS/root.css" />
+    <link rel="stylesheet" href="public/assets/CSS/style.css" />
     <title>Data & IA Newsletter</title>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1 class="nav-logo nav-anim uppercase"></h1>
+
+        <ul class="nav-list tab">
+          <li
+            class="nav-link tablinks uppercase"
+            onclick="openTab(event, 'news')"
+            id="defaultOpen"
+          >
+            <img src="public/assets/IMG/sheets.png" alt="icone news" />news
+          </li>
+          <li
+            class="nav-link tablinks uppercase"
+            onclick="openTab(event, 'dalle')"
+          >
+            <img src="public/assets/IMG/image.png" alt="icone dall-e" />dall-e
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="news-tab tabcontent" id="news">
+          <div class="news-container">
+            <div class="news">
+              <img
+                src="https://thred.com/wp-content/uploads/2022/04/dalle2.png"
+                alt=""
+              />
+
+              <div class="text-container">
+                <h2 class="title">Article 1</h2>
+                <p class="text">
+    
+                </p>
+              </div>
+            </div>
+
+            <div class="news">
+              <img
+                src="https://thred.com/wp-content/uploads/2022/04/dalle2.png"
+                alt=""
+              />
+
+              <div class="text-container">
+                <h2 class="title">Article 1</h2>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, provident! Nulla alias molestiae adipisci ex optio
+                  harum atque mollitia sapiente odit vel, doloremque repellendus
+                  nisi possimus quia corporis veniam iusto?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dalle-tab tabcontent" id="dalle">
+          <div class="dalle-container">
+            <h2>DALLE PAGE</h2>
+
+            <img
+              src="https://thred.com/wp-content/uploads/2022/04/dalle2.png"
+              alt=""
+              class="dalle-img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="column">
+        <a href="" class="conditions">Conditions générales</a>
+        <span>Copyright ©2022</span>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="public/JS/tab.js"></script>
+    <script src="public/JS/typewriter.js"></script>
+  </body>
 </html>
